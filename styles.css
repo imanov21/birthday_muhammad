@@ -1,0 +1,81 @@
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #008888;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.card {
+  text-align: center;
+  background: #fdfdfd;
+  border-radius: 4px;
+  height: 85vh;
+  width: 85vw;
+  display: flex;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px),
+(max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+
+  .birthday-peguin {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+.text {
+  padding: 1.5em;
+}
+
+.birthday-penguin {
+  max-height: 40vh;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+
+.list {
+  text-align: start;
+}
+
+.strong-text {
+  font-weight: bold;
+}
+
+.brown-text {
+  color: brown;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
